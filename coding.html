@@ -1,0 +1,102 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+
+	<div id="header">
+		コーディング
+	</div>
+
+	<p>
+		※詳細は各自参考書等を見てください。<br />
+	</p>
+
+	<!---------------------------------------------------->
+	<h1>Java</h1>
+
+	<!-------------------------------->
+	<h2>標準入出力</h2>
+	<p class="content">
+		最初に、
+<pre class="code">
+Scanner in = new Scanner(System.in);
+</pre>
+		（必ずしも in という変数名である必要はないのでお好みで）<br />
+		int 型の変数 n に入力された整数値を入れたい時は、
+<pre class="code">
+n = in.nextInt();
+</pre>
+		String 型の変数 str に入力された単語を入れたい時は、
+<pre class="code">
+str = in.next();
+</pre>
+		1行(次の改行まで)の場合は、
+<pre class="code">
+str = in.nextLine();
+</pre>
+		<br />
+		出力は、
+<pre class="code">
+System.out.print("Hello,");
+System.out.println(" World!");
+</pre>
+		print では改行が行われず、次の出力が同じ行に出力される。<br />
+		問題文をよく読み、改行が必要か判断すること。<br />
+	</p>
+
+	<!-------------------------------->
+	<h2>配列・ループ</h2>
+	<p class="content">
+		要素数が10個の int 型の配列 arr を作るには、
+<pre class="code">
+int[] arr = new int[10];
+</pre>
+		実際に使えるのは arr[0] から arr[9] なので注意(1から10ではなく0から9)。<br />
+		<br />
+		n 回処理を繰り返すには、
+<pre class="code">
+for (int i = 0; i < n; ++i) {
+	// 処理
+}
+</pre>
+		例えば、arr の中身をカンマ区切りですべて出力するコードは、
+<pre class="code">
+for (int i = 0; i < arr.length; ++i) {
+	if (i != 0) {
+		System.out.print(",");
+	}
+	System.out.print(arr[i]);
+}
+</pre>
+		「カンマ区切りで出力する」＝「2つ目以降の要素の前にカンマを付ける」<br />
+	</p>
+
+	<!-------------------------------->
+	<h2>その他</h2>
+	文字列関係
+<pre class="code">
+String str = "abcdef";
+int len = str.length(); // len = 6;
+char c = str.charAt(1); // c = 'b';
+String sub = str.substring(2, 5); // sub = "cde";
+</pre>
+
+	<!---------------------------------------------------->
+	<h1>C</h1>
+
+	<!-------------------------------->
+	<h2>標準入出力</h2>
+	<p class="content">
+	</p>
+
+	<!---------------------------------------------------->
+	<h1>C++</h1>
+
+	<!-------------------------------->
+	<h2>標準入出力</h2>
+	<p class="content">
+	</p>
+
+</body>
+</html>
