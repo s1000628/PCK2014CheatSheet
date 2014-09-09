@@ -37,5 +37,77 @@
 		数秒で結果がわかるので、間違っていれば修正して再提出すればいい。<br />
 	</p>
 
+	<!-------------------------------->
+	<h2>時間のかかる作業は最初に終わらせる</h2>
+	<p class="content">
+		プロジェクトの作成や、コードに毎回書く内容(テンプレート)をいちいち書くのは時間のロスになる。<br />
+		始まる前にあらかじめ作業を済ませておく。<br />
+		<ul>
+			<li>Java のテンプレート例:
+<pre class="code">
+import java.util.*;
+import java.math.*;
+import java.io.*;
+import java.util.regex.*;
+import static java.lang.Math.*;
+import static java.util.Arrays.*;
+import static java.lang.System.*;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+	}
+}
+</pre>
+			</li>
+			<li>C++ のテンプレート例:
+<pre class="code">
+#include&lt;cstdio&gt;
+#include&lt;cstdlib&gt;
+#include&lt;cstring&gt;
+#include&lt;cmath&gt;
+#include&lt;ctime&gt;
+#include&lt;cctype&gt;
+#include&lt;climits&gt;
+#include&lt;iostream&gt;
+#include&lt;string&gt;
+#include&lt;vector&gt;
+#include&lt;map&gt;
+#include&lt;list&gt;
+#include&lt;queue&gt;
+#include&lt;deque&gt;
+#include&lt;algorithm&gt;
+#include&lt;numeric&gt;
+#include&lt;utility&gt;
+#include&lt;complex&gt;
+#include&lt;memory&gt;
+#include&lt;functional&gt;
+ 
+using namespace std;
+ 
+#define ALL(g) (g).begin(),(g).end()
+#define REP(i, x, n) for(int i = x; i &lt; n; i++)
+#define rep(i,n) REP(i,0,n)
+#define F(i,j,k) fill(i[0],i[0]+j*j,k)
+#define P(p) cout&lt;&lt;(p)&lt;&lt;endl;
+#define EXIST(s,e) ((s).find(e)!=(s).end())
+#define INF 1&lt;&lt;25
+#define pb push_back
+ 
+typedef vector&lt;int&gt; vi;
+typedef vector&lt;long long&gt; vl;
+typedef vector&lt;double&gt; vd;
+typedef pair&lt;int,int&gt; pii;
+typedef pair&lt;long,long&gt; pll;
+typedef long long ll;
+
+int main(int argc, char **argv) {
+	return 0;
+}
+</pre>
+			</li>
+		</ul>
+	</p>
+
 </body>
 </html>
